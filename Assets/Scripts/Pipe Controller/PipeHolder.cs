@@ -5,6 +5,13 @@ using UnityEngine;
 public class PipeHolder : MonoBehaviour
 {
     public int speed;
+<<<<<<< HEAD
+=======
+    void Start()
+    {
+
+    }
+>>>>>>> 121b2f88aa521366e1cb0c08b92ef87aeaf7d134
 
     void Update()
     {
@@ -25,7 +32,11 @@ public class PipeHolder : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+<<<<<<< HEAD
         if (other.CompareTag("Destroy"))
+=======
+        if (other.tag == "Destroy")
+>>>>>>> 121b2f88aa521366e1cb0c08b92ef87aeaf7d134
         {
             Destroy(gameObject);
         }

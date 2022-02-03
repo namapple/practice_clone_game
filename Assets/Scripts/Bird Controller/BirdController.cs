@@ -15,6 +15,7 @@ public class BirdController : MonoBehaviour
     private AudioClip flyClip, pingClip, diedClip;
     private GameObject spawner;
     public int score;
+    public int flag = 0;
     private void Awake()
     {
         MakeInstance();
