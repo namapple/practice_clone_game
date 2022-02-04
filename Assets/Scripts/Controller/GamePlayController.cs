@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,13 +5,9 @@ using UnityEngine.UI;
 public class GamePlayController : MonoBehaviour
 {
     public static GamePlayController instance;
-    [SerializeField]
-    private Button instructionButton;
-    [SerializeField]
-    private Text endScoreText, scoreText, bestScoreText;
-    [SerializeField]
-    private GameObject gameOverPanel;
-
+    [SerializeField] private Button instructionButton;
+    [SerializeField] private Text endScoreText, scoreText, bestScoreText;
+    [SerializeField] private GameObject gameOverPanel;
 
     private void Awake()
     {

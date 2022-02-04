@@ -3,16 +3,13 @@ using UnityEngine;
 public class BirdController : MonoBehaviour
 {
     public static BirdController instance;
-    enum PlayerAction { Attack, Defend, Flee };
     public float bounceForce;
     private Rigidbody2D myBody;
     private Animator anim;
     private bool isAlive;
     private bool didFlap;
-    [SerializeField]
-    private AudioSource audioSource;
-    [SerializeField]
-    private AudioClip flyClip, pingClip, diedClip;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip flyClip, pingClip, diedClip;
     private GameObject spawner;
     public int score;
     public int flag = 0;

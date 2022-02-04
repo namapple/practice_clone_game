@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -25,16 +23,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetHighScore(int score){
+    public void SetHighScore(int score)
+    {
         PlayerPrefs.SetInt(HIGH_SCORE, score);
     }
 
-    public int GetHighScore(){
+    public int GetHighScore()
+    {
         return PlayerPrefs.GetInt(HIGH_SCORE);
     }
 
-    void IsGameStartedForTheFirstTime(){
-        if(!PlayerPrefs.HasKey("IsGameStartedForTheFirstTime")){
+    void IsGameStartedForTheFirstTime()
+    {
+        if (!PlayerPrefs.HasKey("IsGameStartedForTheFirstTime"))
+        {
             PlayerPrefs.SetInt(HIGH_SCORE, 0);
             PlayerPrefs.SetInt("IsGameStartedForTheFirstTime", 0);
         }
